@@ -1,0 +1,32 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(90deg,rgba(5,246,183,255) 0%, rgba(28,218,255,255) 70%);
+}
+
+.a-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.logo {
+    width: 10%;
+}
+
+.productos {
+    color: black;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.productos:hover{
+    color: white
+}
+
+.cart {
+    font-size: 20px;
+}
