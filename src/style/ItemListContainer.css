@@ -1,0 +1,10 @@
+.titulo-entrada {
+    font-size: 2.5rem;
+    font-family: Haettenschweiler;
+    margin: 10px 0 10px 20px; 
+    text-align: center;
+}
+
+.categorias {
+    text-transform: capitalize;
+}

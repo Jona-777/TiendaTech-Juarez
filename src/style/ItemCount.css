@@ -1,0 +1,40 @@
+.boton-container {
+    justify-items: center;
+
+}
+
+.boton-mas {
+    width: 4rem;
+    height: 2rem;
+    background-color: red;
+    border-color: red;
+    font-size: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(248, 14, 14, 0.5);
+    cursor: pointer;
+}
+
+.span-boton {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.boton-restar {
+    width: 4rem;
+    height: 2rem;
+    background-color: aqua;
+    border-color: aqua;
+    font-size: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(6, 192, 248, 0.5);
+    cursor: pointer;
+}
+
+.boton-agregar {
+    width: 200px;
+    height: 3rem;
+    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
