@@ -1,0 +1,90 @@
+.cartview-container {
+    padding: 2rem;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.cartview-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cartview-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+}
+
+/* Imagen del producto */
+.cartview-item img {
+    width: 8rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+.cartview-item span {
+    flex: 1;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cartview-boton {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cartview-boton:hover {
+    background: linear-gradient(90deg, rgba(5,246,183,1) 0%, rgba(28,218,255,1) 70%);
+    color: black;
+}
+
+.cartview-total {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.cartview-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.borrar {
+    background-color: red;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.borrar:hover {
+    background-color: darkred;
+}
+
+.terminar {
+    background: linear-gradient(90deg, rgba(5,246,183,1) 0%, rgba(28,218,255,1) 70%);
+    color: black;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.terminar:hover {
+    background-color: black;
+    color: white;
+}

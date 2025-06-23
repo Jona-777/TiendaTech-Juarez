@@ -1,11 +1,11 @@
 import "../style/ItemCount.css"
 import {useState} from 'react'
 
-const ItemCount = ({stock}) => {
+const ItemCount = ({stock, onAdd}) => {
     const [count, setCount]= useState(1)
 
     const restar = () => {
-        if(count > 0){
+        if(count > 1){
             setCount(count - 1)
         }
     }
@@ -21,7 +21,7 @@ const ItemCount = ({stock}) => {
             <span className='span-boton'>{count}</span>
             <button className='boton-mas' onClick={sumar}>+</button>
         </div>
-        <button className='boton-agregar'>Agregar al carrito</button>
+        <button className='boton-agregar' onClick={()=>onAdd(count)}>Agregar al carrito</button>
     </div>
   )
 }

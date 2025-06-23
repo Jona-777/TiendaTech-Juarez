@@ -1,8 +1,29 @@
 import "../style/ItemDetail.css" 
-import React from 'react'
+import React, {useContext, useState} from 'react'
 import ItemCount from './ItemCount'
+import { CartContext } from "../context/CartContext"
+import { Link } from "react-router-dom"
+import Swal from 'sweetalert2'
 
 const ItemDetail = ({detalle}) => {
+
+  const [compra, setCompra]= useState(false)
+
+  const {addItem} = useContext(CartContext)
+
+  const onAdd = (cantidad) =>{
+    setCompra(true)
+    addItem(detalle,cantidad)
+    Swal.fire({
+      position:'top-end',
+      icon:'success',
+      title:`Agregaste ${detalle.name} al carrito`,
+      showCancelButton:false,
+      showConfirmButton:false,
+      timer:2000,
+      width:300
+    })
+  }
   return (
     <div className="itemdetail-container">
       <div className="itemdetail-tarjeta">
@@ -11,7 +32,12 @@ const ItemDetail = ({detalle}) => {
           <p>{detalle.description}</p>
           <p>${detalle.price} </p>
           <p>Stock:{detalle.stock} unidades</p>
-          <ItemCount stock={detalle.stock}/>
+          {compra 
+          ? <div style={{width:'90%', display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+            <Link to='/' className="itemdetail-boton">Seguir Comprando</Link>
+            <Link to='/cart' className="itemdetail-botoncarrito">Ir al carrito</Link>
+          </div>
+          : <ItemCount stock={detalle.stock} onAdd={onAdd}/>}
       </div>
     </div>
   )

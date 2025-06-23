@@ -13,7 +13,9 @@ const Navbar = () => {
                 <NavLink className="productos" to="/category/tecnologia">Tecnología</NavLink>
                 <NavLink className="productos" to="/category/ofertas">Ofertas</NavLink>
             </div>
+            <NavLink to='/cart'style={{textDecoration:'none'}}>
             <CartWidget/>
+            </NavLink>
         </nav>
     )
 }
