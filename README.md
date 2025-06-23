@@ -1,6 +1,6 @@
 # TiendaTech 📱🛒
 
-Este proyecto es un e-commerce de celulares y perifericos tegnologicos realizado en un curso de CoderHouse con bases de React con JavaScript.
+Este proyecto es un e-commerce de celulares y periféricos tegnológicos realizado en un curso de CoderHouse con bases de React con JavaScript.
 
 ![app](/public/readme-react.PNG)
 
@@ -19,12 +19,12 @@ Si desea ver el proyecto online, puede ingresar al siguiente link: [TiendaTech](
 
 ### Librerias Utilizadas 📖
 
--[React Router Dom](https://reactrouter.com/): utilizada para la navegación por rutas
--[Firebase](https://firebase.google.com/): utilizada como base de datos
--[React Icons](https://react-icons.github.io/): utilizada para agregar iconos
--[React Spinners](https://www.davidhu.io/): utilizada para agregar spinners
--[React Hook Form](https://react-hook-form.com/): utlizada para agregar 
--[Sweet Alert 2](https://sweetalert2.github.io/): utilizada para agregar alertas
+- [React Router Dom](https://reactrouter.com/): utilizada para la navegación por rutas
+- [Firebase](https://firebase.google.com/): utilizada como base de datos
+- [React Icons](https://react-icons.github.io/): utilizada para agregar iconos
+- [React Spinners](https://www.davidhu.io/): utilizada para agregar spinners
+- [React Hook Form](https://react-hook-form.com/): utilizada para agregar 
+- [Sweet Alert 2](https://sweetalert2.github.io/): utilizada para agregar alertas
 
 
 Desarrollado por Jonathan Juarez
