@@ -1,13 +1,11 @@
 import { createContext, useState } from "react";
 
-//Creamos el contexto
+
 export const CartContext = createContext()
 
-//Crear nuestro proveedor 
 
 export const CartProvider = ({children}) =>{
     const [cart, setCart]= useState([])
-    //todas las funciones que modifiquen ese estado van a estar aca bajo
 
     const addItem = (item, cantidad)=>{
     
